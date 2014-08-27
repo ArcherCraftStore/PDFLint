@@ -1,0 +1,15 @@
+{
+    "name": "acosf/pdflint",
+    "description": "A PHP Based Word Processor For The Web",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weldon Henson",
+            "email": "weldon23.henson23@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    }
+}
