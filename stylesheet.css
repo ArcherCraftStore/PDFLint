@@ -1,0 +1,14 @@
+.jumbotron{
+  background-image: url("logo.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+body{
+padding-top: 70px;
+}
+.popover{
+  display: inline-block;
+}
+element.style{
+  display: inline;
+ }
