@@ -101,6 +101,13 @@ document.getElementById("container").appendChild(button);
    </div>
  </div>
 </div>
+    <div class="row">
+<div class="col-xs-6 col-md-3">
+<a href="#" class="thumbnail">
+<iframe src="https://public.ducksboard.com/w/KC8UJCz9eWmst24q5qve" width="300" height="704" frameborder="0" scrolling="no" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
+</a>
+</div>
+</div>
 <form class="navbar-form navbar-fixed-bottom" role="search">
     <div id="container" class="container">
         </div>
