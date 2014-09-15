@@ -4,6 +4,7 @@
 <title>New Essay, New Work, New You - PDFLint </title>
 <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
 <script src="jquery.min.js"></script>
+    
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/> 
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"/>
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -15,7 +16,8 @@
 <script src="bootstrap-tour.js"></script>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="stylesheet" type="text/css" href="landing-page.css">
-<script>
+    
+    <script>
 $(function(){
   var tour =  new Tour({
        steps: [
@@ -36,11 +38,49 @@ $(function(){
             },
          
           ]});
-
+       
            tour.init();
            tour.start();
-    });
-</script>
+  
+   
+             var  options = {
+
+    // Required. Called when a user selects an item in the Chooser.
+    success: function(files) {
+        var WantsFile = confirm("Are you sure you want to download this? \n " +files[0].link);
+      if(WantsFile){
+        
+  }
+                       
+    },
+
+    // Optional. Called when the user closes the dialog without selecting a file
+    // and does not include any parameters.
+    cancel: function() {
+
+    },
+
+    // Optional. "preview" (default) is a preview link to the document for sharing,
+    // "direct" is an expiring link to download the contents of the file. For more
+    // information about link types, see Link types below.
+    linkType: "preview", // or "direct"
+
+    // Optional. A value of false (default) limits selection to a single file, while
+    // true enables multiple file selection.
+    multiselect: false, // or true
+
+    // Optional. This is a list of file extensions. If specified, the user will
+    // only be able to select files with these extensions. You may also specify
+    // file types, such as "video" or "images" in the list. For more information,
+    // see File types below. By default, all extensions are allowed.
+    extensions: ['.pdf', '.doc', '.docx'],
+};
+          var button = Dropbox.createChooseButton(options);
+document.getElementById("container").appendChild(button);
+      });
+ 
+          </script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="zu9l1hq2hal0xwb"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -61,7 +101,9 @@ $(function(){
    </div>
  </div>
 </div>
-
-</nav>
+<form class="navbar-form navbar-fixed-bottom" role="search">
+    <div id="container" class="container">
+        </div>
+</form>
 </body>
 </html>
