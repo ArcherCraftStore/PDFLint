@@ -43,12 +43,12 @@ toolbar3 : "insertdatetime forecolor backcolor",
 var introToPDFLint =  new Tour({
        steps: [
          {
-           element: "input[name=title]",
+           element: "input",
            title: "Naming your Document ",
            content: "Click on The Title Box and type in the Title",
             },
                {
-           element: "input[name=author]",
+           element: "input#title",
            title: "Authoring  your Document ",
            content: "Click on The Author Box and type in the Title",
             },
@@ -78,7 +78,7 @@ var introToPDFLint =  new Tour({
 <form method ="POST" action="createproc.php">
 
 
-<input type="text" name="title" class="form-control" placeholder="Title">
+<input type="text" name="title" id="title" class="form-control" placeholder="Title">
 
 <input type="text" name="author" class="form-control" placeholder="Author">
 
@@ -92,4 +92,4 @@ var introToPDFLint =  new Tour({
 </div>
 </div>
 </body>
-</html>
+</html></html>>
