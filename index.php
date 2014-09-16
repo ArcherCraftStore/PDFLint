@@ -16,7 +16,7 @@
 <script src="bootstrap-tour.js"></script>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="stylesheet" type="text/css" href="landing-page.css">
-    
+    <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.1-latest.js" type="text/javascript"></script>
     <script>
 $(function(){
   var tour =  new Tour({
@@ -77,6 +77,24 @@ $(function(){
 };
           var button = Dropbox.createChooseButton(options);
 document.getElementById("container").appendChild(button);
+var client = new Dropbox.Client({key: '95ozyt3y86sz08p'}
+);
+
+// Try to finish OAuth authorization.
+$(".jumbotron a#intro").click(function(){
+    
+
+client.authenticate({interactive: true}, function (error) {
+    if (error) {
+        alert('Authentication error: ' + error);
+    }
+});
+
+
+if (client.isAuthenticated()) {
+    // Client is authenticated. Display UI.
+}
+});
       });
  
           </script>
@@ -103,12 +121,13 @@ document.getElementById("container").appendChild(button);
 </div>
     <div class="row">
 <div class="col-xs-6 col-md-3">
-<a href="#" class="thumbnail">
 <iframe src="https://public.ducksboard.com/w/KC8UJCz9eWmst24q5qve" width="300" height="704" frameborder="0" scrolling="no" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
-</a>
 </div>
+<div class="col-xs-6 col-md-3">
+    <iframe src="https://public.ducksboard.com/w/egwcCByKAWv9KbjTroeV" width="300" height="332" frameborder="0" scrolling="no" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
+    </div>
 </div>
-<form class="navbar-form navbar-fixed-bottom" role="search">
+<form class="navbar-form" role="search">
     <div id="container" class="container">
         </div>
 </form>
