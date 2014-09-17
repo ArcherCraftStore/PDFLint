@@ -65,6 +65,11 @@ var introToPDFLint =  new Tour({
            element: "#mceu_30",
            title: "Editing your Document ",
            content: "Click on The Document Body Box and type in the Title",
+            },
+             {
+           element: "#togetherjs-dock",
+           title: "Collaboration",
+           content: "Click on one of the buttons here to start collaboration",
             }
             
             ]});
