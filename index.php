@@ -22,7 +22,7 @@ $(function(){
   var tour =  new Tour({
        steps: [
           {
-            element: "#intro", 
+            element: "#pdfl-tour", 
             title: "Welcome to PDFLint!" ,
             content: "Hi! Welcome to PDFLint By Weldon H  \n and the ACOSF! I'm Weldon H , Himself, \n and I am going to teach you \n how to use this fun tool!",
        },
@@ -128,7 +128,7 @@ if (client.isAuthenticated()) {
     </div>
 </div>
 <form class="navbar-form" role="search">
-    <div id="container" class="container-fluid">
+    <div id="container" class="container">
         </div>
 </form>
 </body>
