@@ -17,7 +17,7 @@
 <link href="bootstrap-tour.min.css" rel="stylesheet">
 <script src="bootstrap-tour.min.js"></script>
 <script src="bootstrap-tour.js"></script>
-
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
 <script>
 function PDFLintSave(element_id, html, body) {
         // Do some custom HTML cleanup
@@ -43,14 +43,14 @@ toolbar3 : "insertdatetime forecolor backcolor",
 var introToPDFLint =  new Tour({
        steps: [
          {
-           element: "input",
+           element: "#title",
            title: "Naming your Document ",
            content: "Click on The Title Box and type in the Title",
             },
                {
-           element: "input#title",
+           element: "#author",
            title: "Authoring  your Document ",
-           content: "Click on The Author Box and type in the Title",
+           content: "Click on The Author Box and type in Your Name",
             },
                {
            element: "#mceu_30",
@@ -74,6 +74,7 @@ var introToPDFLint =  new Tour({
 </ul>
 </nav>
 <div class="jumbotron">
+<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
 <div class="input-group">
 <form method ="POST" action="createproc.php">
 
