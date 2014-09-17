@@ -22,12 +22,13 @@ $(function(){
   var tour =  new Tour({
        steps: [
           {
-            element: "#pdfl-tour", 
+            element: "#intro", 
             title: "Welcome to PDFLint!" ,
             content: "Hi! Welcome to PDFLint By Weldon H  \n and the ACOSF! I'm Weldon H , Himself, \n and I am going to teach you \n how to use this fun tool!",
        },
          {
-           element: "#newessay",
+           
+element: "#newessay",
            title: " Goto the Essay Creator ",
            content: "Click on The New Essay Button",
             },
@@ -36,7 +37,13 @@ $(function(){
            title: "Send! ",
            content: "If you have this, click here to send your work.",
             },
-         
+{
+ title:"Check the Updates Center!",
+ element: "#Commits",
+  content: "Check This for Updates to the PDFLint Word Processor",
+},
+
+        
           ]});
        
            tour.init();
@@ -115,13 +122,14 @@ if (client.isAuthenticated()) {
    
       <h1 id="pdfl-tour">PDFLint Word Processing</h1> 
 <span class="glyphicon glyphicon-pencil"></span><p>The Frugal MS Word</p>
-<p><a class="btn btn-primary btn-lg" href="#" role="button" id="intro">Get Started!</a></p>
+<p>
+<a class="btn btn-primary btn-lg" href="#" role="button" id="intro">Get Started!</a></p>
    </div>
  </div>
 </div>
     <div class="row">
 <div class="col-xs-6 col-md-3">
-<iframe src="https://public.ducksboard.com/w/KC8UJCz9eWmst24q5qve" width="300" height="704" frameborder="0" scrolling="no" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
+<iframe src="https://public.ducksboard.com/w/KC8UJCz9eWmst24q5qve" width="300" height="704" frameborder="0" scrolling="no" id="Commits" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
 </div>
 <div class="col-xs-6 col-md-3">
     <iframe src="https://public.ducksboard.com/w/egwcCByKAWv9KbjTroeV" width="300" height="332" frameborder="0" scrolling="no" style="border: solid rgba(243, 243, 232, 0.701961) 10px; border-radius: 5px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;"></iframe>
