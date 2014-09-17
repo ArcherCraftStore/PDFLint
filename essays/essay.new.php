@@ -18,7 +18,16 @@
 <script src="bootstrap-tour.min.js"></script>
 <script src="bootstrap-tour.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
+
 <script>
+TogetherJSConfig_getUserName = function () {
+
+return prompt("Username:");
+
+};
+TogetherJSConfig_on_ready = function () {
+  sendTogetherJSURLToServer(TogetherJS.shareUrl());
+};
 function PDFLintSave(element_id, html, body) {
         // Do some custom HTML cleanup
         html = html.replace(/a/g,'b');
@@ -74,7 +83,11 @@ var introToPDFLint =  new Tour({
 </ul>
 </nav>
 <div class="jumbotron">
-<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+<button id="start-togetherjs" type="button"
+ onclick="TogetherJS(this); return false"
+ data-end-togetherjs-html="End TogetherJS">
+  Start TogetherJS
+</button>
 <div class="input-group">
 <form method ="POST" action="createproc.php">
 
@@ -93,4 +106,4 @@ var introToPDFLint =  new Tour({
 </div>
 </div>
 </body>
-</html></html>>
+</html></html>
