@@ -65,11 +65,6 @@ var introToPDFLint =  new Tour({
            element: "#mceu_30",
            title: "Editing your Document ",
            content: "Click on The Document Body Box and type in the Title",
-            },
-             {
-           element: "#togetherjs-dock",
-           title: "Collaboration",
-           content: "Click on one of the buttons here to start collaboration",
             }
             
             ]});
@@ -89,7 +84,7 @@ var introToPDFLint =  new Tour({
 </nav>
 <div class="jumbotron">
 <button id="start-togetherjs" type="button"
- onclick="TogetherJS(this); return false;"
+ onclick="TogetherJS(this); return false"
  data-end-togetherjs-html="End TogetherJS">
   Start TogetherJS
 </button>

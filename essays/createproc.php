@@ -8,3 +8,6 @@ $file = $name.$ext;
 echo "<strong>Putting File...</strong>";
 file_put_contents($file,$head.$_POST["body"]."</body></html>");
 echo "Done Putting File!";
+echo "Redirecting you to your work...";
+
+

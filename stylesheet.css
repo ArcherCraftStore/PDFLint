@@ -5,6 +5,8 @@
 }
 body{
 padding-top: 70px;
+color: black;
+background-color: #d9534f;
 }
 .popover{
   display: inline-block;

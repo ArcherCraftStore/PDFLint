@@ -1,4 +1,4 @@
-/<html>
+<html>
 <head>
 <title>New Essay, New Work, New You - PDFLint </title>
 <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
@@ -19,15 +19,9 @@
     </head>
     </body>
     <div class="container">
-    <ul class="list-group">
-<?php
-$dir = __DIR__.'/essay-products';
-$files = scandir($dir);
-while (list(, $docpath) = each($files)) {
-    echo "<li class=\"list-group-item\"><a href=\"http://localhost:80/archeros/productivity/PDFLint/essay-products/".$docpath."\">".$docpath."</a></li>\n";
-}
-?>
-</ul>
+   
+
+<
 </div>
 </body>
 </html>
