@@ -8,6 +8,7 @@
             "email": "weldon23.henson23@gmail.com"
         }
     ],
+      "version": "2.0",
     "minimum-stability": "stable",
     "require": {
 

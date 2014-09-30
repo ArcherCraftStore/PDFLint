@@ -25,6 +25,7 @@ TogetherJSConfig_getUserName = function () {
 return prompt("Username:");
 
 };
+TogetherJSConfig_toolName = "BIRD";
 TogetherJSConfig_on_ready = function () {
   sendTogetherJSURLToServer(TogetherJS.shareUrl());
 };
